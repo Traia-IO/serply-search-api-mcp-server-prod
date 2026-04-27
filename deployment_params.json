@@ -1,0 +1,30 @@
+{
+  "github_url": "https://github.com/Traia-IO/serply-search-api-mcp-server",
+  "mcp_server": {
+    "name": "serply-search-api-mcp",
+    "description": "Web search skill for crypto trading agents. retrieves google web search results, bing search results (including ads and shopping data), and google scholar academic papers to support market research, token discovery, and informed trading decisions.",
+    "server_type": "streamable-http",
+    "requires_api_key": true,
+    "api_key_header": "Authorization",
+    "api_keys": [
+      "SERPLY_API_KEY"
+    ],
+    "capabilities": [
+      "serply_google_search",
+      "serply_bing_search",
+      "serply_google_scholar"
+    ],
+    "payment_protocol": "402",
+    "dual_mode": true,
+    "dual_mode_description": "Supports both authenticated (free with API key) and payment (402 protocol) modes"
+  },
+  "deployment_method": "cloud_run",
+  "gcp_project_id": "traia-mcp-servers",
+  "gcp_region": "us-central1",
+  "tags": [
+    "serply search api",
+    "api",
+    "mcp"
+  ],
+  "ref": "main"
+}
